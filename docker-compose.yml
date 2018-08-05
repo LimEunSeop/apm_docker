@@ -2,7 +2,7 @@ version: '3'
 
 services:
   db:
-    image: mariadb:5.5
+    image: mysql:5.7
     volumes:
       - "./data:/var/lib/mysql:rw"
     environment:
@@ -14,7 +14,7 @@ services:
       - "3306:3306"
 
   phpmyadmin:
-    image: phpmyadmin/phpmyadmin:4.7
+    image: phpmyadmin/phpmyadmin:4.8
     depends_on:
       - db
     ports:

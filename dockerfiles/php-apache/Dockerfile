@@ -1,4 +1,4 @@
-FROM php:5.6-apache
+FROM php:7.1-apache
 
 RUN apt-get update
 RUN apt-get install -y git zip zlib1g-dev
